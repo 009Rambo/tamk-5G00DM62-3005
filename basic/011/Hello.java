@@ -1,7 +1,7 @@
-/*
-   @author      Ramesh Pandey <ramesh.pandey@tuni.fi>
-   @version     2024.0206 (last modified)
-   @since       17.0 (miminimum Java version)
+/**
+ * @author      Ramesh Pandey <ramesh.pandey@tuni.fi>
+ * @version     2024.0206 (last modified)
+ * @since       17.0 (miminimum Java version)
  */
 class HelloWorld {
 
