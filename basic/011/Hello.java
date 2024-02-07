@@ -1,7 +1,7 @@
 /**
  * @author      Ramesh Pandey <ramesh.pandey@tuni.fi>
- * @version     2024.0206 (last modified)
- * @since       17.0 (miminimum Java version)
+ * @version     2024.0206
+ * @since       17.0
  */
 class HelloWorld {
 
@@ -15,6 +15,7 @@ class HelloWorld {
         System.out.println("Hello World");
     }
 }
+
 
 // End of file
 
