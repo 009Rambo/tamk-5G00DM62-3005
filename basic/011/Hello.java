@@ -4,16 +4,35 @@
  * @since       17.0
  */
 class HelloWorld {
+    /**
+     * Composes a string with persons name
+     * surrounded by "box" character ch.
+     *
+     * @param  ch     Character to use in the box.
+     * @return String for name in the box.
+     */
+    public static String name(String ch) {
+    String str = ch + " Hello, I am John Doe " + ch;
+    return str;
+    }
 
     /**
-     * Exercise: 1.1
-     * Write the Hello World program.
+     * Return user defined string.
      *
-     * @param  ho just for fun.
+     * More documentatation..
+     * More documentatation..
+     *
+     * @param  ch     Character to use.
+     * @param  len    Length of the returned string.
+     * @return String that can be drawn as a line.
      */
-    public static String sat(String ho) {
-        String str = "Hello World";
-        return str;
+    public static String line(String ch, int len) {
+    String str = "";
+
+    for (int i = 0; i < len; i++)
+        str += ch;
+
+    return str;
     }
 
     /**
@@ -22,8 +41,10 @@ class HelloWorld {
      * @param  args   Command line args. Not used.
      */
     public static void main(String[] args) {
-        String ho = "ho";
-        System.out.println(sat(ho));
+    String ch = "*";
+    System.out.println(line(ch, 24));
+    System.out.println(name(ch));
+    System.out.println(line(ch, 24));
     }
 }
 
