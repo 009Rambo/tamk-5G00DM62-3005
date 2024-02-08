@@ -9,12 +9,24 @@ class HelloWorld {
      * Exercise: 1.1
      * Write the Hello World program.
      *
-     * @param  args  Command line arguments. Not used.
+     * @param  ho just for fun.
+     */
+    public static String sat(String ho) {
+        String str = "Hello World";
+        return str;
+    }
+
+    /**
+     * Implements homework 1.1
+     *
+     * @param  args   Command line args. Not used.
      */
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        String ho = "ho";
+        System.out.println(sat(ho));
     }
 }
+
 
 
 // End of file
