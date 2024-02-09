@@ -1,27 +1,63 @@
 /**
- * Program to display personal information.
+ * Program print
  *
- * @author      Ramesh Pandey <ramesh.pandey@tuni.fi>
- * @version     2024.0209
- * @since       17.0
+ * Display: date, your first name, last name, and height (in cm) to the screen.
+ * Store each information in a separate variable before displaying.
+ *
+ * The date is YYYY-MM-DD
+ * Hello, I'm John Doe
+ * I'm 185 cm tall
+ *
+ * @author Ramesh Pandey
+ * @version 2024.0209
+ * @since 17.0
  */
+public class Print {
+    /**
+     *
+     *
+     * @param ch Character to use in the box.
+     * @return String for name in the box.
+     */
+    public static String name(String ch) {
+        String str = "Hello, I'm John Doe";
+        return str;
+    }
 
-class PersonalInfo {
+    /**
+     * Generates a line of characters.
+     *
+     * More documentation..
+     * More documentation..
+     *
+     * @param ch  Character to use.
+     * @param len Length of the returned string.
+     * @return String that can be drawn as a line.
+     */
+    public static String line(String ch, int len) {
+        String str = "";
+        for (int i = 0; i < len; i++)
+            str += ch;
+        return str;
+    }
+
     /**
      * Main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */
     public static void main(String[] args) {
-        // Storing information in separate variables
-        String date = "2024-02-07";
+        String ch = "*";
+        String date = "YYYY-MM-DD";
         String firstName = "John";
         String lastName = "Doe";
         int heightInCm = 185;
 
-        // Displaying the information
-        System.out.println("Date: " + date);
-        System.out.println("Hello, I'm " + firstName + " " + lastName);
+
+        System.out.println("The date is " + date);
+        System.out.println(name(ch));
         System.out.println("I'm " + heightInCm + " cm tall");
     }
 }
+
+
