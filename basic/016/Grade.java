@@ -12,7 +12,7 @@
  * @since 17.0
  */
 
-class CalculateGrade {
+class Grade {
     /**
      * Calculates the final grade based on weighted average mean.
      *
