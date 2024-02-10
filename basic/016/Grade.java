@@ -23,6 +23,7 @@ class Grade {
      * @param gradeImplementation Grade for the implementation.
      * @return Final grade.
      */
+    
     public static double calculateFinalGrade(int ectsExam, double gradeExam, int ectsDesign,
                                              double gradeDesign, int ectsImplementation, double gradeImplementation) {
         double totalEcts = ectsExam + ectsDesign + ectsImplementation;
@@ -54,13 +55,16 @@ class Grade {
         int ectsImplementation = 3;
         double gradeImplementation = 4.0;
 
-        System.out.println("               ECTS   Grade");
-        System.out.println("-----------------------------");
-        printCourseDetails("Exam", ectsExam, gradeExam);
-        printCourseDetails("Design", ectsDesign, gradeDesign);
+
+
+
+        System.out.println("                       ECTS   Grade");
+        System.out.println("-------------------------------------------");
+        printCourseDetails("Exam          ", ectsExam, gradeExam);
+        printCourseDetails("Design        ", ectsDesign, gradeDesign);
         printCourseDetails("Implementation", ectsImplementation, gradeImplementation);
-        System.out.println("-----------------------------");
-        System.out.println("Totals          " + (ectsExam + ectsDesign + ectsImplementation) + "      " +
+        System.out.println("-------------------------------------------");
+        System.out.println("Totals                  " + (ectsExam + ectsDesign + ectsImplementation) + "      " +
                 String.format("%.3f", calculateFinalGrade(ectsExam, gradeExam, ectsDesign, gradeDesign, ectsImplementation, gradeImplementation)) + "  (Final Grade)");
     }
 }
