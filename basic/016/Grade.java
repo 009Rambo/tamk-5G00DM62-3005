@@ -12,7 +12,7 @@
  * @since 17.0
  */
 
-class CalculateFinalGrade {
+class CalculateGrade {
     /**
      * Calculates the final grade based on weighted average mean.
      *
@@ -24,9 +24,9 @@ class CalculateFinalGrade {
      * @param gradeImplementation Grade for the implementation.
      * @return Final grade.
      */
-    public static double calculateFinalGrade(int ectsExam, double gradeExam,
-                                             int ectsDesign, double gradeDesign,
-                                             int ectsImplementation, double gradeImplementation) {
+
+    public static double calculateFinalGrade (int ectsExam, double gradeExam, int ectsDesign,
+        double gradeDesign,int ectsImplementation, double gradeImplementation) {
         double totalEcts = ectsExam + ectsDesign + ectsImplementation;
         double weightedSum = (ectsExam * gradeExam) + (ectsDesign * gradeDesign) + (ectsImplementation * gradeImplementation);
         return weightedSum / totalEcts;
@@ -46,13 +46,13 @@ class CalculateFinalGrade {
         double gradeImplementation = 4.0;
 
 
-        System.out.println("ECTS   Grade");
+        System.out.println("               ECTS   Grade");
         System.out.println("-----------------------------");
         System.out.println("Exam            " + ectsExam + "      " + gradeExam);
         System.out.println("Design          " + ectsDesign + "      " + gradeDesign);
         System.out.println("Implementation  " + ectsImplementation + "      " + gradeImplementation);
         System.out.println("-----------------------------");
-        System.out.println("Totals          " + (ectsExam + ectsDesign + ectsImplementation) + "      " + String.format("%.3f", calculateFinalGrade(ectsExam, gradeExam, ectsDesign, gradeDesign, ectsImplementation, gradeImplementation)));
+        System.out.println("Totals          " + (ectsExam + ectsDesign + ectsImplementation) + "      " + String.format("%.3f", calculateFinalGrade(ectsExam, gradeExam, ectsDesign, gradeDesign, ectsImplementation, gradeImplementation )) + "  (Final Grade)");
     }
 }
 

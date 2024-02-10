@@ -11,6 +11,7 @@ class HelloWorld {
      * @param  ch     Character to use in the box.
      * @return String for name in the box.
      */
+    
     public static String name(String ch) {
     String str = ch + " Hello, I am John Doe " + ch;
     return str;
