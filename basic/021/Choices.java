@@ -8,13 +8,15 @@
  * @version 2024.0210
  * @since 17.0
  */
-class IfChoices {
+
+class Choices {
     /**
      * Determines the order of three values and prints the result.
      *
      * @param a The first value.
      * @param b The second value.
      * @param c The third value.
+     * @return None.
      */
     public static void decideOrder(int a, int b, int c) {
         if (a >= b && a >= c) {
@@ -58,7 +60,8 @@ class IfChoices {
         int b = 4;
         int c = 7;
 
-
         decideOrder(a, b, c);
     }
 }
+
+
