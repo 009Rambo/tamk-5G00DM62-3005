@@ -1,3 +1,5 @@
+
+
 /**
  * Program print
  *
@@ -12,6 +14,8 @@
  * @version 2024.0209
  * @since 17.0
  */
+
+ 
 
 public class Print {
     /**

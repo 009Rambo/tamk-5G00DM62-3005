@@ -1,30 +1,34 @@
+
+
 /**
  * @author      Ramesh Pandey <ramesh.pandey@tuni.fi>
  * @version     2024.0206
  * @since       17.0
  */
+
 class HelloWorld {
+    
+
     /**
-     * Composes a string with persons name
+     * Composes a string with persons name,
      * surrounded by "box" character ch.
      *
-     * @param  ch     Character to use in the box.
+     * @param  ch Character to use in the box.
      * @return String for name in the box.
      */
-    
+
+
     public static String name(String ch) {
     String str = ch + " Hello, I am John Doe " + ch;
     return str;
     }
 
     /**
-     * Return user defined string.
+     * Returns a user defined string.
      *
-     * More documentatation..
-     * More documentatation..
      *
-     * @param  ch     Character to use.
-     * @param  len    Length of the returned string.
+     * @param  ch  Character to use.
+     * @param  len Length of the returned string.
      * @return String that can be drawn as a line.
      */
     public static String line(String ch, int len) {
@@ -37,10 +41,11 @@ class HelloWorld {
     }
 
     /**
-     * Implements homework 1.1
+     * Implements homework 1.1.
      *
      * @param  args   Command line args. Not used.
      */
+
     public static void main(String[] args) {
     String ch = "*";
     System.out.println(line(ch, 24));
