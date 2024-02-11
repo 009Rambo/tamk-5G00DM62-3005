@@ -1,3 +1,4 @@
+
 /**
  * If Choices
  *
@@ -8,19 +9,20 @@
  * @version 2024.0210
  * @since 17.0
  */
-
 class Choices {
+
     /**
      * Determines the order of three values and prints the result.
      *
      * @param a The first value.
      * @param b The second value.
      * @param c The third value.
-     * @return None.
+     * @return Order.
      */
     public static void decideOrder(int a, int b, int c) {
         if (a >= b && a >= c) {
             System.out.println(a + " is the biggest");
+
             if (b >= c) {
                 System.out.println(c + " is in the middle");
                 System.out.println(b + " is the smallest");
@@ -30,6 +32,7 @@ class Choices {
             }
         } else if (b >= a && b >= c) {
             System.out.println(b + " is the biggest");
+
             if (a >= c) {
                 System.out.println(c + " is in the middle");
                 System.out.println(a + " is the smallest");
@@ -39,6 +42,7 @@ class Choices {
             }
         } else {
             System.out.println(c + " is the biggest");
+
             if (a >= b) {
                 System.out.println(b + " is in the middle");
                 System.out.println(a + " is the smallest");
@@ -50,7 +54,7 @@ class Choices {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */

@@ -3,7 +3,8 @@
  * Calculate Taxes
  *
  * Write a program to calculate annual taxes from the given initial values:
- * - Total earnings in year: 134,000 of which the stock exchange earnings are 23,000.
+ * - Total earnings in year: 134,000.
+ * - Of which, the stock exchange earnings are 23,000.
  * - The nominal tax rate for a person is 27.3%.
  * - The government tax rate for extra income, like stocks, is 21%.
  *
@@ -15,7 +16,7 @@
  * @since 17.0
  */
 class CalculateTaxes {
-    
+
     /**
      * Calculates the total taxes based on total earnings and tax rates.
      *
@@ -53,7 +54,9 @@ class CalculateTaxes {
         System.out.println("All income             : " + totalEarnings);
         System.out.println("Work earnings          : " + workEarnings);
         System.out.println("Stock earnings         : " + stockEarnings + "\n");
-        System.out.println("Taxes total            : " + String.format("%.2f", totalTaxes));
-        System.out.println("Net income             : " + String.format("%.2f", netIncome) + " (after taxes)");
+        System.out.println("Taxes total            : " + String.format("%.2f",
+         totalTaxes));
+        System.out.println("Net income             : " + String.format("%.2f",
+        netIncome) + " (after taxes)");
     }
 }

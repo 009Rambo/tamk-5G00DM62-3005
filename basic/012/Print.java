@@ -15,6 +15,7 @@
  * @since 17.0
  */
 public class Print {
+
     /**
      *Prints name.
      *
@@ -36,6 +37,7 @@ public class Print {
      * @param len Length of the returned string.
      * @return String that can be drawn as a line.
      */
+
     public static String line(String ch, int len) {
         String str = "";
         for (int i = 0; i < len; i++)

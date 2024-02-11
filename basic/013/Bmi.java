@@ -14,7 +14,8 @@
  * @version 2024.0209
  * @since 17.0
  */
- class BMI {
+class BMI {
+
     /**
      * Calculates the body mass index (BMI).
      *
@@ -38,7 +39,8 @@
 
         System.out.println("Weight (kg): " + weightKg);
         System.out.println("Height (m) : " + heightM);
-        System.out.printf("BMI        : %.2f\n", calculateBMI(weightKg, heightM));
+        System.out.printf("BMI        : %.2f\n",
+        calculateBMI(weightKg, heightM));
     }
 }
 

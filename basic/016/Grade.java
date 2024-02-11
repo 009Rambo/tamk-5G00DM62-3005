@@ -13,7 +13,7 @@
  * @since 17.0
  */
 class Grade {
-    
+
     /**
      * Calculates the final grade based on weighted average mean.
      *
@@ -27,7 +27,8 @@ class Grade {
      */
     public static double calculateFinalGrade(int ectsExam, double gradeExam,
     int ectsDesign,
-        double gradeDesign, int ectsImplementation, double gradeImplementation) {
+        double gradeDesign, int ectsImplementation,
+        double gradeImplementation) {
         double totalEcts = ectsExam + ectsDesign + ectsImplementation;
         double weightedSum = (ectsExam * gradeExam) + (ectsDesign * gradeDesign)
         + (ectsImplementation * gradeImplementation);
@@ -75,3 +76,5 @@ class Grade {
                 ectsImplementation, gradeImplementation)) + "  (Final Grade)");
     }
 }
+
+
