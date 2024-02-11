@@ -1,7 +1,8 @@
 /**
  * Calculate Cone
  *
- * Calculate triangular cone's volume from radius and height. Display result according to radius and height.
+ * Calculate triangular cone's volume from radius and height.
+ * Display result according to radius and height.
  *
  * volume = (1/3) * PI * r^2 * h
  *
@@ -26,7 +27,7 @@ class CalculateCone {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */
