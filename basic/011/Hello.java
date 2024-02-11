@@ -5,11 +5,12 @@
  * @version     2024.0206
  * @since       17.0
  */
-
 class HelloWorld {
     /**
-     * Composes a string with persons name,
-     * surrounded by "box" character ch.
+     *
+     * Composes a string with persons name.
+     * Surrounded by "box" character ch.
+     *
      * @param  ch Character to use in the box.
      * @return String for name in the box.
      */
@@ -18,7 +19,9 @@ class HelloWorld {
     return str;
     }
     /**
+     *
      * Returns a user defined string.
+     * 
      * @param  ch  Character to use.
      * @param  len Length of the returned string.
      * @return String that can be drawn as a line.
