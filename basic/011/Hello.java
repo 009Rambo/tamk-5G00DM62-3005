@@ -8,7 +8,6 @@
 class HelloWorld {
 
     /**
-     *
      * Composes a string with persons name.
      *
      * Surrounds a name by "box" character ch.
@@ -22,7 +21,6 @@ class HelloWorld {
     }
 
     /**
-     *
      * Returns a user defined string.
      *
      * @param  ch  Character to use.
@@ -37,9 +35,8 @@ class HelloWorld {
 
     return str;
     }
-    
+
     /**
-     *
      * Implements homework 1.1.
      *
      * @param  args   Command line args. Not used.
