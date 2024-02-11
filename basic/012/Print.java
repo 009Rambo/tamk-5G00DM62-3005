@@ -17,7 +17,7 @@
 public class Print {
 
     /**
-     *Prints name.
+     * Prints name.
      *
      * @param ch Character to use in the box.
      * @return String for name in the box.
@@ -37,9 +37,9 @@ public class Print {
      * @param len Length of the returned string.
      * @return String that can be drawn as a line.
      */
-
     public static String line(String ch, int len) {
         String str = "";
+
         for (int i = 0; i < len; i++)
             str += ch;
         return str;

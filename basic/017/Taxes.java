@@ -27,11 +27,24 @@ class CalculateTaxes {
      * @return Total taxes.
      */
     public static double calculateTaxes(double totalEarnings,
-        double stockEarnings, double nominalTaxRate, double governmentTaxRate) {
+        double stockEarnings, double nominalTaxRate,
+        double governmentTaxRate) {
         double workEarnings = totalEarnings - stockEarnings;
         double nominalTax = workEarnings * (nominalTaxRate / 100);
         double stockTax = stockEarnings * (governmentTaxRate / 100);
         return nominalTax + stockTax;
+    }
+
+    /**
+     * Calculates the net income after taxes.
+     *
+     * @param totalEarnings      Total earnings in the year.
+     * @param totalTaxes         Total taxes paid.
+     * @return Net income after taxes.
+     */
+    public static double calculateNetIncome(double totalEarnings,
+        double totalTaxes) {
+        return totalEarnings - totalTaxes;
     }
 
     /**
@@ -47,9 +60,8 @@ class CalculateTaxes {
 
         double totalTaxes = calculateTaxes(totalEarnings, stockEarnings,
         nominalTaxRate, governmentTaxRate);
+        double netIncome = calculateNetIncome(totalEarnings, totalTaxes);
         double workEarnings = totalEarnings - stockEarnings;
-        double netIncome = totalEarnings - totalTaxes;
-
 
         System.out.println("All income             : " + totalEarnings);
         System.out.println("Work earnings          : " + workEarnings);
@@ -60,3 +72,5 @@ class CalculateTaxes {
         netIncome) + " (after taxes)");
     }
 }
+
+

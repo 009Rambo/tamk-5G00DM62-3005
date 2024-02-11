@@ -17,7 +17,6 @@ class Choices {
      * @param a The first value.
      * @param b The second value.
      * @param c The third value.
-     * @return Order.
      */
     public static void decideOrder(int a, int b, int c) {
         if (a >= b && a >= c) {
