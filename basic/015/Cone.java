@@ -12,8 +12,6 @@
  * @version 2024.0210
  * @since 17.0
  */
-import java.lang.Math;
-
 class CalculateCone {
     /**
      * Calculates the volume of a triangular cone.

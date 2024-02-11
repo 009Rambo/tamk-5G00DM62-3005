@@ -14,12 +14,9 @@
  * @version 2024.0209
  * @since 17.0
  */
-
- 
-
 public class Print {
     /**
-     *
+     *Prints name.
      *
      * @param ch Character to use in the box.
      * @return String for name in the box.
@@ -47,7 +44,7 @@ public class Print {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */

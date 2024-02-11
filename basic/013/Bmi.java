@@ -1,3 +1,4 @@
+
 /**
  * Calculate bmi
  *
@@ -13,8 +14,7 @@
  * @version 2024.0209
  * @since 17.0
  */
-
- class CalculateBMI {
+ class BMI {
     /**
      * Calculates the body mass index (BMI).
      *
@@ -27,7 +27,7 @@
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */

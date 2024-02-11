@@ -1,3 +1,4 @@
+
 /**
  * Calculate Final Grade
  *
@@ -12,6 +13,7 @@
  * @since 17.0
  */
 class Grade {
+    
     /**
      * Calculates the final grade based on weighted average mean.
      *
@@ -23,11 +25,12 @@ class Grade {
      * @param gradeImplementation Grade for the implementation.
      * @return Final grade.
      */
-    
-    public static double calculateFinalGrade(int ectsExam, double gradeExam, int ectsDesign,
-                                             double gradeDesign, int ectsImplementation, double gradeImplementation) {
+    public static double calculateFinalGrade(int ectsExam, double gradeExam,
+    int ectsDesign,
+        double gradeDesign, int ectsImplementation, double gradeImplementation) {
         double totalEcts = ectsExam + ectsDesign + ectsImplementation;
-        double weightedSum = (ectsExam * gradeExam) + (ectsDesign * gradeDesign) + (ectsImplementation * gradeImplementation);
+        double weightedSum = (ectsExam * gradeExam) + (ectsDesign * gradeDesign)
+        + (ectsImplementation * gradeImplementation);
         return weightedSum / totalEcts;
     }
 
@@ -43,7 +46,7 @@ class Grade {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */
@@ -62,9 +65,13 @@ class Grade {
         System.out.println("-------------------------------------------");
         printCourseDetails("Exam          ", ectsExam, gradeExam);
         printCourseDetails("Design        ", ectsDesign, gradeDesign);
-        printCourseDetails("Implementation", ectsImplementation, gradeImplementation);
+        printCourseDetails("Implementation", ectsImplementation,
+        gradeImplementation);
         System.out.println("-------------------------------------------");
-        System.out.println("Totals                  " + (ectsExam + ectsDesign + ectsImplementation) + "      " +
-                String.format("%.3f", calculateFinalGrade(ectsExam, gradeExam, ectsDesign, gradeDesign, ectsImplementation, gradeImplementation)) + "  (Final Grade)");
+        System.out.println("Totals                  " + (ectsExam + ectsDesign +
+        ectsImplementation) + "      " +
+                String.format("%.3f", calculateFinalGrade(ectsExam, gradeExam,
+                ectsDesign, gradeDesign,
+                ectsImplementation, gradeImplementation)) + "  (Final Grade)");
     }
 }

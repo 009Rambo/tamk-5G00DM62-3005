@@ -1,3 +1,4 @@
+
 /**
  * Calculate Taxes
  *
@@ -13,8 +14,8 @@
  * @version 2024.0210
  * @since 17.0
  */
-
 class CalculateTaxes {
+    
     /**
      * Calculates the total taxes based on total earnings and tax rates.
      *
@@ -24,7 +25,8 @@ class CalculateTaxes {
      * @param governmentTaxRate  Government tax rate for extra income.
      * @return Total taxes.
      */
-    public static double calculateTaxes(double totalEarnings, double stockEarnings, double nominalTaxRate, double governmentTaxRate) {
+    public static double calculateTaxes(double totalEarnings,
+        double stockEarnings, double nominalTaxRate, double governmentTaxRate) {
         double workEarnings = totalEarnings - stockEarnings;
         double nominalTax = workEarnings * (nominalTaxRate / 100);
         double stockTax = stockEarnings * (governmentTaxRate / 100);
@@ -32,7 +34,7 @@ class CalculateTaxes {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */
@@ -42,7 +44,8 @@ class CalculateTaxes {
         double nominalTaxRate = 27.3;
         double governmentTaxRate = 21.0;
 
-        double totalTaxes = calculateTaxes(totalEarnings, stockEarnings, nominalTaxRate, governmentTaxRate);
+        double totalTaxes = calculateTaxes(totalEarnings, stockEarnings,
+        nominalTaxRate, governmentTaxRate);
         double workEarnings = totalEarnings - stockEarnings;
         double netIncome = totalEarnings - totalTaxes;
 
