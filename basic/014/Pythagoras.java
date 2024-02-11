@@ -1,3 +1,4 @@
+
 /**
  * Calculate Hypotenuse
  *
@@ -16,6 +17,7 @@
 import java.lang.Math;
 
 class CalculateHypotenuse {
+    
     /**
      * Calculates the hypotenuse (C) from the given sides.
      *
@@ -28,7 +30,7 @@ class CalculateHypotenuse {
     }
 
     /**
-     * Main method to execute the program.
+     * Executes the Main method of the program.
      *
      * @param args Command line arguments (not used).
      */

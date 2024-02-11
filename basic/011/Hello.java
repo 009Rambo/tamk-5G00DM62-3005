@@ -37,7 +37,9 @@ class HelloWorld {
 
     return str;
     }
+    
     /**
+     *
      * Implements homework 1.1.
      *
      * @param  args   Command line args. Not used.
