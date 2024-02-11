@@ -7,26 +7,18 @@
  */
 
 class HelloWorld {
-    
-
     /**
      * Composes a string with persons name,
      * surrounded by "box" character ch.
-     *
      * @param  ch Character to use in the box.
      * @return String for name in the box.
      */
-
-
     public static String name(String ch) {
     String str = ch + " Hello, I am John Doe " + ch;
     return str;
     }
-
     /**
      * Returns a user defined string.
-     *
-     *
      * @param  ch  Character to use.
      * @param  len Length of the returned string.
      * @return String that can be drawn as a line.
@@ -39,13 +31,11 @@ class HelloWorld {
 
     return str;
     }
-
     /**
      * Implements homework 1.1.
      *
      * @param  args   Command line args. Not used.
      */
-
     public static void main(String[] args) {
     String ch = "*";
     System.out.println(line(ch, 24));
