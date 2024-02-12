@@ -1,4 +1,3 @@
-
 /**
  * Calculate Taxes
  *
@@ -11,7 +10,7 @@
  * The program should calculate taxes and display the result.
  * The results may contain any number of decimals.
  *
- * @author Ramesh Pandey <ramesh.pandey@tuni.fi>
+ * @author Ramesh Pandey
  * @version 2024.0210
  * @since 17.0
  */
@@ -26,25 +25,34 @@ class CalculateTaxes {
      * @param governmentTaxRate  Government tax rate for extra income.
      * @return Total taxes.
      */
-    public static double calculateTaxes(double totalEarnings,
-        double stockEarnings, double nominalTaxRate,
-        double governmentTaxRate) {
+    public static double calculateTaxes(double totalEarnings, double stockEarnings,
+                                        double nominalTaxRate, double governmentTaxRate) {
         double workEarnings = totalEarnings - stockEarnings;
-        double nominalTax = workEarnings * (nominalTaxRate / 100);
-        double stockTax = stockEarnings * (governmentTaxRate / 100);
+        double nominalTax = calculateWorkTax(workEarnings, nominalTaxRate);
+        double stockTax = calculateStockTax(stockEarnings, governmentTaxRate);
         return nominalTax + stockTax;
     }
 
     /**
-     * Calculates the net income after taxes.
+     * Calculates the tax for work income.
      *
-     * @param totalEarnings      Total earnings in the year.
-     * @param totalTaxes         Total taxes paid.
-     * @return Net income after taxes.
+     * @param workIncome      Income earned through work.
+     * @param nominalTaxRate  Nominal tax rate for a person.
+     * @return Tax amount for work income.
      */
-    public static double calculateNetIncome(double totalEarnings,
-        double totalTaxes) {
-        return totalEarnings - totalTaxes;
+    public static double calculateWorkTax(double workIncome, double nominalTaxRate) {
+        return workIncome * (nominalTaxRate / 100);
+    }
+
+    /**
+     * Calculates the tax for stock income.
+     *
+     * @param stockIncome            Income earned from stocks or investments.
+     * @param governmentTaxRate      Government tax rate for extra income.
+     * @return Tax amount for stock income.
+     */
+    public static double calculateStockTax(double stockIncome, double governmentTaxRate) {
+        return stockIncome * (governmentTaxRate / 100);
     }
 
     /**
@@ -59,18 +67,14 @@ class CalculateTaxes {
         double governmentTaxRate = 21.0;
 
         double totalTaxes = calculateTaxes(totalEarnings, stockEarnings,
-        nominalTaxRate, governmentTaxRate);
-        double netIncome = calculateNetIncome(totalEarnings, totalTaxes);
+                nominalTaxRate, governmentTaxRate);
         double workEarnings = totalEarnings - stockEarnings;
+        double netIncome = totalEarnings - totalTaxes;
 
         System.out.println("All income             : " + totalEarnings);
         System.out.println("Work earnings          : " + workEarnings);
         System.out.println("Stock earnings         : " + stockEarnings + "\n");
-        System.out.println("Taxes total            : " + String.format("%.2f",
-         totalTaxes));
-        System.out.println("Net income             : " + String.format("%.2f",
-        netIncome) + " (after taxes)");
+        System.out.println("Taxes total            : " + String.format("%.2f", totalTaxes));
+        System.out.println("Net income             : " + String.format("%.2f", netIncome) + " (after taxes)");
     }
 }
-
-
