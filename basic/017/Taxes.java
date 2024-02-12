@@ -1,3 +1,4 @@
+
 /**
  * Calculate Taxes
  *
@@ -10,7 +11,7 @@
  * The program should calculate taxes and display the result.
  * The results may contain any number of decimals.
  *
- * @author Ramesh Pandey
+ * @author Ramesh Pandey <ramesh.pandey@tuni.fi>
  * @version 2024.0210
  * @since 17.0
  */
@@ -25,8 +26,9 @@ class CalculateTaxes {
      * @param governmentTaxRate  Government tax rate for extra income.
      * @return Total taxes.
      */
-    public static double calculateTaxes(double totalEarnings, double stockEarnings,
-                                        double nominalTaxRate, double governmentTaxRate) {
+    public static double calculateTaxes(double totalEarnings,
+        double stockEarnings,
+        double nominalTaxRate, double governmentTaxRate) {
         double workEarnings = totalEarnings - stockEarnings;
         double nominalTax = calculateWorkTax(workEarnings, nominalTaxRate);
         double stockTax = calculateStockTax(stockEarnings, governmentTaxRate);
@@ -40,7 +42,8 @@ class CalculateTaxes {
      * @param nominalTaxRate  Nominal tax rate for a person.
      * @return Tax amount for work income.
      */
-    public static double calculateWorkTax(double workIncome, double nominalTaxRate) {
+    public static double calculateWorkTax(double workIncome,
+        double nominalTaxRate) {
         return workIncome * (nominalTaxRate / 100);
     }
 
@@ -51,7 +54,8 @@ class CalculateTaxes {
      * @param governmentTaxRate      Government tax rate for extra income.
      * @return Tax amount for stock income.
      */
-    public static double calculateStockTax(double stockIncome, double governmentTaxRate) {
+    public static double calculateStockTax(double stockIncome,
+        double governmentTaxRate) {
         return stockIncome * (governmentTaxRate / 100);
     }
 
@@ -74,7 +78,11 @@ class CalculateTaxes {
         System.out.println("All income             : " + totalEarnings);
         System.out.println("Work earnings          : " + workEarnings);
         System.out.println("Stock earnings         : " + stockEarnings + "\n");
-        System.out.println("Taxes total            : " + String.format("%.2f", totalTaxes));
-        System.out.println("Net income             : " + String.format("%.2f", netIncome) + " (after taxes)");
+        System.out.println("Taxes total            : " + String.format("%.2f",
+         totalTaxes));
+        System.out.println("Net income             : " + String.format("%.2f",
+         netIncome) + " (after taxes)");
     }
 }
+
+
