@@ -14,10 +14,8 @@
  * @version 2024.0209
  * @since 17.0
  */
-import java.lang.Math;
-
 class CalculateHypotenuse {
-    
+
     /**
      * Calculates the hypotenuse (C) from the given sides.
      *

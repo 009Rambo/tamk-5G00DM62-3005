@@ -48,8 +48,3 @@ class HelloWorld {
     System.out.println(line(ch, 24));
     }
 }
-
-
-
-// End of file
-

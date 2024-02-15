@@ -1,4 +1,3 @@
-
 /**
  * Calculate Final Grade
  *
@@ -76,5 +75,3 @@ class Grade {
                 ectsImplementation, gradeImplementation)) + "  (Final Grade)");
     }
 }
-
-

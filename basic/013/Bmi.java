@@ -1,4 +1,3 @@
-
 /**
  * Calculate bmi
  *
@@ -43,5 +42,3 @@ class BMI {
         calculateBMI(weightKg, heightM));
     }
 }
-
-

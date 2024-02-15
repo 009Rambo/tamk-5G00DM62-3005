@@ -1,5 +1,4 @@
 
-
 /**
  * Program print
  *
@@ -57,11 +56,8 @@ public class Print {
         String lastName = "Doe";
         int heightInCm = 185;
 
-
         System.out.println("The date is " + date);
         System.out.println(name(ch));
         System.out.println("I'm " + heightInCm + " cm tall");
     }
 }
-
-

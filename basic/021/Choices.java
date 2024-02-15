@@ -66,5 +66,3 @@ class Choices {
         decideOrder(a, b, c);
     }
 }
-
-

@@ -1,4 +1,3 @@
-
 /**
  * Calculate Taxes
  *
@@ -84,5 +83,3 @@ class CalculateTaxes {
          netIncome) + " (after taxes)");
     }
 }
-
-
