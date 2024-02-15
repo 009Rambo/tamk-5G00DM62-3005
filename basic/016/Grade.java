@@ -58,9 +58,6 @@ class Grade {
         int ectsImplementation = 3;
         double gradeImplementation = 4.0;
 
-
-
-
         System.out.println("                       ECTS   Grade");
         System.out.println("-------------------------------------------");
         printCourseDetails("Exam          ", ectsExam, gradeExam);

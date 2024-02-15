@@ -35,7 +35,6 @@ class BMI {
         double weightKg = 70; // Example weight in kilograms
         double heightM = 1.75; // Example height in meters
 
-
         System.out.println("Weight (kg): " + weightKg);
         System.out.println("Height (m) : " + heightM);
         System.out.printf("BMI        : %.2f\n",

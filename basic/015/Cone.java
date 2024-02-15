@@ -34,7 +34,6 @@ class CalculateCone {
         double radius = 5; // Example radius
         double height = 10; // Example height
 
-
         System.out.println("radius: " + radius);
         System.out.println("height: " + height);
         System.out.printf("volume: %.2f\n", calculateVolume(radius, height));

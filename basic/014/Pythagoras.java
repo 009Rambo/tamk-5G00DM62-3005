@@ -36,7 +36,6 @@ class CalculateHypotenuse {
         double sideA = 3; // Example length of side a
         double sideB = 4; // Example length of side b
 
-
         System.out.println("a: " + sideA);
         System.out.println("b: " + sideB);
         System.out.printf("c: %.2f\n", calculateHypotenuse(sideA, sideB));
