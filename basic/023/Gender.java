@@ -33,7 +33,7 @@
 class DetermineHeightCategory {
 
     /**
-     * Get the height category based on gender and height.
+     * Gets the height category based on gender and height.
      *
      * @param gender Gender of the person (MALE or FEMALE).
      * @param height Height of the person in centimeters.
@@ -62,7 +62,7 @@ class DetermineHeightCategory {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */

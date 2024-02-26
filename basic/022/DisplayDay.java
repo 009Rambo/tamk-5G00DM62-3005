@@ -23,7 +23,7 @@
 class DisplayDay {
 
     /**
-     * Get the name of the day based on its value.
+     * Gets the name of the day based on its value.
      *
      * @param day Value representing the day.
      * @return Name of the day or "Unknown date (N)" if the value is not a known date.
@@ -50,7 +50,7 @@ class DisplayDay {
     }
 
     /**
-     * Main method to execute the program.
+     * Prints main method to execute the program.
      *
      * @param args Command line arguments (not used).
      */
