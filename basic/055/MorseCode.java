@@ -33,7 +33,7 @@ class ArrayMorseCode {
     }
 
     /**
-     * Converst a string (phone number) into Morse code for numbers.
+     * Converts a string (phone number) into Morse code for numbers.
      *
      * @param phoneNumber The phone number to convert.
      */
