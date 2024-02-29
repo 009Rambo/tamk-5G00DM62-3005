@@ -26,8 +26,8 @@ import java.util.Arrays;
 class ArraySearch {
 
     /**
-     * This is main method to search values from array.
-     * In a specified range and display the values found.
+     * This is main method to search values from array in specified range and display the values found.
+     *
      *
      * @param args Command line arguments (not used).
      */
