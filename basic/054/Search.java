@@ -26,7 +26,7 @@ import java.util.Arrays;
 class ArraySearch {
 
     /**
-     * This is main method to search values from array in specified range and display the values found.
+     * This is a main method to search values from array in specified range and display the values found.
      *
      *
      * @param args Command line arguments (not used).
@@ -46,8 +46,10 @@ class ArraySearch {
      * @param max   The maximum value of the range.
      */
     public static void displayInRange(int[] array, int min, int max) {
-        Arrays.stream(array)
-        .filter(value -> value >= min && value <= max)
-        .forEach(value -> System.out.println(value + " , "));
+        for (int value : array) {
+            if (value >= min && value <= max) {
+                System.out.println(value + " , ");
+            }
+        }
     }
 }
