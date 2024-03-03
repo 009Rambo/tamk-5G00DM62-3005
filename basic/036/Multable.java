@@ -20,7 +20,7 @@ class LoopMultiplicationTable {
     /**
      * Displays a multiplication table with evenly spaced formatting based on the specified size.
      *
-     * 
+     *
      * @param size The size of the multiplication table.
      */
     public static void displayMultiplicationTable(int size) {
