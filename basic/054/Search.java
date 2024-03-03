@@ -47,8 +47,7 @@ class ArraySearch {
      */
     public static void displayInRange(int[] array, int min, int max) {
         Arrays.stream(array)
-                .filter(value -> value >= min && value <= max)
-                .forEach(value ->
-                System.out.println(value + " , "));
+        .filter(value -> value >= min && value <= max)
+        .forEach(value -> System.out.println(value + " , "));
     }
 }
