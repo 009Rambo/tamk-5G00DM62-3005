@@ -1,5 +1,5 @@
 /**
- * Calculate bmi
+ * Ex 1.3 Calculate bmi
  *
  * Calculate body mass index from WEIGHT and HEIGHT. Display results:
  *
@@ -13,7 +13,7 @@
  * @version 2024.0209
  * @since 17.0
  */
-class BMI {
+class Bmi {
 
     /**
      * Calculates the body mass index (BMI).
