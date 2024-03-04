@@ -23,7 +23,7 @@ import java.util.Set;
  * @version 2024.0226
  * @since 17.0
  */
-class LotteryMethod {
+class Lottery {
 
     /**
      * Generates a lottery combination of 7 unique numbers between 1 and 40.

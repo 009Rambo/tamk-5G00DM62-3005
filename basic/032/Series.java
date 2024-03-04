@@ -14,7 +14,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class LoopSeries {
+class Series {
 
     /**
      * Displays 10-based column numbers with configurable length.

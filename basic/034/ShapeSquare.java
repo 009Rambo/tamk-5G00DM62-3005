@@ -30,7 +30,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class LoopShapeSquare {
+class ShapeSquare {
 
     /**
      * Displays a square to the screen based on defined SIZE.

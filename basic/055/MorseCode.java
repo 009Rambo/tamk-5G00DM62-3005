@@ -20,7 +20,7 @@ import java.util.Map;
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayMorseCode {
+class MorseCode {
 
     /**
      * This is main method to convert a string (phone number) into Morse code for numbers.

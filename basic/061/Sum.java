@@ -25,7 +25,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class ArraySumMethod {
+class Sum {
 
     /**
      * This is main method to demonstrate the usage of the sum method.

@@ -13,7 +13,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayPrintReverse {
+class Print {
 
     /**
      * Prints main method to display array values in reverse order.

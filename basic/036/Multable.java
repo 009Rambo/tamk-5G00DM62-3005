@@ -15,7 +15,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class LoopMultiplicationTable {
+class Multable {
 
     /**
      * Displays a multiplication table with evenly spaced formatting based on the specified size.

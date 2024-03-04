@@ -25,7 +25,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayMaxMethod {
+class Max {
 
     /**
      * This is main method to demonstrate the usage of the max method.

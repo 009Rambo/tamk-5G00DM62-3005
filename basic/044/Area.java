@@ -22,7 +22,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class AreaCircleMethod {
+class Area {
 
     /**
      * Calculates the area of a circle.

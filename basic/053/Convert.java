@@ -20,7 +20,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayConvert {
+class Convert {
 
     /**
      * This is Main method to convert inches to centimeters and display the conversions.

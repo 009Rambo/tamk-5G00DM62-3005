@@ -25,7 +25,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayMinMethod {
+class Min {
 
     /**
      * This is a main method to demonstrate the usage of the min method.

@@ -21,7 +21,7 @@ import java.util.Random;
  * @version 2024.0226
  * @since 17.0
  */
-class DiceMethod {
+class Dice {
 
     /**
      * Simulates a dice roll.

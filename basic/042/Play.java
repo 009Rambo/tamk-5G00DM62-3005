@@ -23,7 +23,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class PlayMethod {
+class Play {
 
     /**
      * Determines how many rounds a player can afford to play until running out of money.

@@ -26,7 +26,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class DetermineWeatherCondition {
+class Temperature {
 
     /**
      * Gets the weather condition based on city and temperature.

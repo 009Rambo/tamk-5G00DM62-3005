@@ -23,7 +23,7 @@ import java.util.Set;
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayTemperatures {
+class Temperatures {
 
     /**
      * Prints main method to store temperature values in an array and present a report.

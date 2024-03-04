@@ -22,7 +22,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class EventScheduler {
+class Celendar {
 
     /**
      * Displays event based on date and time.

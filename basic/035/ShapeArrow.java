@@ -15,7 +15,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class LoopShapeArrow {
+class ShapeArrow {
 
     /**
      * Displays the specified pattern using nested loops.

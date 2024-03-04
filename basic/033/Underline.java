@@ -14,7 +14,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class LoopUnderline {
+class Underline {
 
     /**
      * Draws an underline below a string.

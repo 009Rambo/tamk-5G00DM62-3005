@@ -32,7 +32,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class ArrayFindMethod {
+class Find {
 
     /**
      * This is a main method to demonstrate the usage of the find method.

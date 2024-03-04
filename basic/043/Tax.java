@@ -23,7 +23,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class TaxMethod {
+class Tax {
 
     /**
      * Calculates taxes based on yearly salary and percentage.

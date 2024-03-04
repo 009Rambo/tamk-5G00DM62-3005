@@ -22,7 +22,7 @@
  * @version 2024.0226
  * @since 17.0
  */
-class SumMethod {
+class Sum {
 
     /**
      * Calculates the arithmetic sum from 1 to the specified upper limit n.

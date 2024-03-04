@@ -23,7 +23,7 @@ import java.util.Arrays;
  * @version 2024.0226
  * @since 17.0
  */
-class ArraySearch {
+class Search {
 
     /**
      * This is a main method to search values from array in specified range and display the values found.
