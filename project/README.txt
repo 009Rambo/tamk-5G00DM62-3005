@@ -17,11 +17,17 @@ DESCRIPTION
 	Main.java
 	Class1.java
 	Class2.java
+    Class3.java
+    Class4.java
+    Class5.java
 
     The unit tests include files:
 
 	Class1Test.java
 	Class2Test.java
+    Class3Test.java
+    Class4Test.java
+    Class5Test.java
 
     The Suite includes:
 

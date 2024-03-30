@@ -7,6 +7,8 @@ import org.junit.runners.Suite.SuiteClasses;
 @Suite.SuiteClasses({
     Class1Test.class,
     Class2Test.class,
+    Class3Test.class,
+    Class4Test.class,
     // Add other test classes here
 })
 public class TestSuiteAll {
