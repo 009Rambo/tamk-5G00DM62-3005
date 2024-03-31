@@ -1,14 +1,15 @@
+import java.util.Random;
+
 /**
  * Represents Class9 with various utility methods.
  */
-public class Class9 {
+class Class9 {
     /**
      * Checks if an email address is valid.
      * @param email The email address to validate
      * @return True if the email address is valid, false otherwise
      */
     public boolean isEmailValid(String email) {
-        // Your implementation here
         return email.contains("@") && email.contains(".");
     }
 
@@ -17,8 +18,14 @@ public class Class9 {
      * @return The randomly generated password
      */
     public String generateRandomPassword() {
-        // Your implementation here
-        return "randompassword";
+        StringBuilder password = new StringBuilder();
+        Random random = new Random();
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (int i = 0; i < 8; i++) {
+            int index = random.nextInt(characters.length());
+            password.append(characters.charAt(index));
+        }
+        return password.toString();
     }
 
     /**
@@ -27,7 +34,6 @@ public class Class9 {
      * @return The factorial of the given number
      */
     public int calculateFactorial(int n) {
-        // Your implementation here
         int factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
@@ -41,8 +47,7 @@ public class Class9 {
      * @return The masked phone number
      */
     public String maskPhoneNumber(String phoneNumber) {
-        // Your implementation here
-        return phoneNumber.replaceAll("\\d(?=\\d{4})", "*");
+        return "[" + phoneNumber.substring(0, 8) + "]-****";
     }
 
     /**
@@ -51,7 +56,6 @@ public class Class9 {
      * @return The formatted SSN
      */
     public String formatSSN(String ssn) {
-        // Your implementation here
         return "***-**-" + ssn.substring(ssn.length() - 4);
     }
 }

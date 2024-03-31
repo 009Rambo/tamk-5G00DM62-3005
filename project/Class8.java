@@ -72,6 +72,6 @@ public class Class8 {
      * @return True if the car has automatic transmission, false otherwise
      */
     public boolean hasAutomaticTransmission() {
-        return transmissionType.equals("Automatic");
+         return "Automatic".equals(transmissionType);
     }
 }
