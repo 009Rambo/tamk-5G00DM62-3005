@@ -10,7 +10,12 @@ import org.junit.runners.Suite.SuiteClasses;
     Class3Test.class,
     Class4Test.class,
     Class5Test.class,
-    // Add other test classes here
+    Class6Test.class,
+    Class7Test.class,
+    Class8Test.class,
+    Class9Test.class,
+    Class10Test.class,
+
 })
 public class TestSuiteAll {
     // This class remains empty
