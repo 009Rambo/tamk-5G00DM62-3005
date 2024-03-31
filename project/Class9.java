@@ -47,7 +47,7 @@ class Class9 {
      * @return The masked phone number
      */
     public String maskPhoneNumber(String phoneNumber) {
-        return "[" + phoneNumber.substring(0, 8) + "]-****";
+    return phoneNumber.replaceAll("\\d(?=\\d{4})", "*");
     }
 
     /**
@@ -56,6 +56,6 @@ class Class9 {
      * @return The formatted SSN
      */
     public String formatSSN(String ssn) {
-        return "***-**-" + ssn.substring(ssn.length() - 4);
+    return "***-**-" + ssn.substring(ssn.length() - 4);
     }
 }
