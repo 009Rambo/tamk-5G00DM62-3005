@@ -59,3 +59,4 @@ class Class9 {
     return "***-**-" + ssn.substring(ssn.length() - 4);
     }
 }
+

@@ -103,3 +103,4 @@ Determine car type: Gasoline
 Depreciation rate: 0.40950999999999993
 Is luxury car: true
 Recommended oil type: 5W-30
+
