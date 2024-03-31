@@ -17,9 +17,9 @@ DESCRIPTION
 	Main.java
 	Class1.java
 	Class2.java
-        Class3.java
-        Class4.java
-        Class5.java
+    Class3.java
+    Class4.java
+    Class5.java
 	Class6.java
 	Class7.java
 	Class8.java
@@ -30,9 +30,9 @@ DESCRIPTION
 
 	Class1Test.java
 	Class2Test.java
-        Class3Test.java
+    Class3Test.java
    	Class4Test.java
-        Class5Test.java
+    Class5Test.java
 	Class6Test.java
 	Class7Test.java
 	Class8Test.java

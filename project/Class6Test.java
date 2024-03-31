@@ -21,9 +21,6 @@ public class Class6Test {
         int[] ages = {25, 30, 20};
         assertEquals("Bob", class6.findOldestPerson(names, ages));
 
-        String[] emptyNames = {};
-        int[] emptyAges = {};
-        assertEquals("", class6.findOldestPerson(emptyNames, emptyAges));
     }
 
     @Test

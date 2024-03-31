@@ -1,5 +1,5 @@
 #! /bin/sh
 
-java -cp . Main
+java -cp "." Main
 
 # End of file

@@ -44,8 +44,8 @@ public class Class7Test {
 
     @Test
     public void testCountVowels() {
-        assertEquals(2, class7.countVowels("hello"));
-        assertEquals(3, class7.countVowels("world"));
-        assertEquals(0, class7.countVowels("nth"));
+        assertEquals(3, class7.countVowels("hello world"));
+        assertEquals(0, class7.countVowels("12345"));
+        assertEquals(2, class7.countVowels("apple1234"));
     }
 }

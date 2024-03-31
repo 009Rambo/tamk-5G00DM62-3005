@@ -4,41 +4,54 @@ import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+
 @RunWith(JUnit4.class)
 public class Class8Test {
-    Class8 class8 = new Class8();
+    Class8 class8 = new Class8("Toyota", 2015, 150000, "Automatic");
 
     @Test
     public void testIsMileageAcceptable() {
-        assertTrue(class8.isMileageAcceptable(150000));
-        assertFalse(class8.isMileageAcceptable(-10000));
-        assertFalse(class8.isMileageAcceptable(350000));
+        assertTrue(class8.isMileageAcceptable());
+
+        // Additional test cases
+        assertFalse(new Class8("Toyota", 2015, 500000, "Automatic").isMileageAcceptable());
+        assertFalse(new Class8("Toyota", 2015, 200000, "Automatic").isMileageAcceptable());
+        assertTrue(new Class8("Toyota", 2015, 100000, "Automatic").isMileageAcceptable());
     }
 
     @Test
     public void testGetFuelEfficiencyCategory() {
-        assertEquals("Low", class8.getFuelEfficiencyCategory(10));
-        assertEquals("Moderate", class8.getFuelEfficiencyCategory(20));
-        assertEquals("High", class8.getFuelEfficiencyCategory(30));
+        assertEquals("Moderate", class8.getFuelEfficiencyCategory());
+
+        // Additional test cases
+        assertEquals("High", new Class8("Toyota", 2015, 50000, "Automatic").getFuelEfficiencyCategory());
+        assertEquals("Low", new Class8("Toyota", 2015, 250000, "Automatic").getFuelEfficiencyCategory());
     }
 
     @Test
     public void testCalculateTotalCostOfOwnership() {
-        assertEquals(20000, class8.calculateTotalCostOfOwnership(15000, 1000, 5), 0);
-        assertEquals(40000, class8.calculateTotalCostOfOwnership(30000, 2000, 10), 0);
+        assertEquals(50000.0, class8.calculateTotalCostOfOwnership(25000.0, 10000.0, 15000.0), 0.001);
+
+        // Additional test cases
+        assertEquals(100000.0, new Class8("Toyota", 2015, 150000, "Automatic").calculateTotalCostOfOwnership(25000.0, 40000.0, 35000.0), 0.001);
+        assertEquals(30000.0, new Class8("Toyota", 2015, 150000, "Automatic").calculateTotalCostOfOwnership(10000.0, 10000.0, 10000.0), 0.001);
     }
 
     @Test
     public void testIsModelYearInRange() {
         assertTrue(class8.isModelYearInRange(2015, 2000, 2022));
+
+        // Additional test cases
         assertFalse(class8.isModelYearInRange(1990, 2000, 2022));
         assertTrue(class8.isModelYearInRange(2022, 2000, 2022));
     }
 
     @Test
-    public void testDetermineTransmissionType() {
-        assertEquals("Automatic", class8.determineTransmissionType("This car has automatic transmission"));
-        assertEquals("Manual", class8.determineTransmissionType("Manual transmission is included"));
-        assertEquals("Semi-Automatic", class8.determineTransmissionType("Semi-Automatic transmission option available"));
+    public void testHasAutomaticTransmission() {
+        assertTrue(class8.hasAutomaticTransmission());
+
+        // Additional test cases
+        assertFalse(new Class8("Toyota", 2015, 150000, "Manual").hasAutomaticTransmission());
+        assertTrue(new Class8("Toyota", 2015, 150000, "Semi-Automatic").hasAutomaticTransmission());
     }
 }

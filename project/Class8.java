@@ -1,62 +1,77 @@
+/**
+ * Represents a car with various properties and functionalities.
+ */
 public class Class8 {
+    private String brand;
+    private int year;
+    private double mileage;
+    private String transmissionType;
+
     /**
-     * Checks if a given car's mileage is within an acceptable range.
+     * Constructs a car object with the given properties.
+     * @param brand The brand of the car
+     * @param year The manufacturing year of the car
      * @param mileage The mileage of the car
-     * @return True if the mileage is within the acceptable range, false otherwise
+     * @param transmissionType The type of transmission of the car
      */
-    public boolean isMileageAcceptable(double mileage) {
-        return mileage >= 0 && mileage <= 300000; // Assuming maximum mileage is 300,000 miles
+    public Class8(String brand, int year, double mileage, String transmissionType) {
+        this.brand = brand;
+        this.year = year;
+        this.mileage = mileage;
+        this.transmissionType = transmissionType;
+    }
+
+    // Getters for car properties (brand, year, mileage, transmissionType)...
+
+    /**
+     * Checks if the mileage of the car is acceptable.
+     * @return True if mileage is less than or equal to 200,000 miles, false otherwise
+     */
+    public boolean isMileageAcceptable() {
+        return mileage <= 200000;
     }
 
     /**
-     * Determines the fuel efficiency category of a car based on its miles per gallon (mpg).
-     * @param mpg The miles per gallon of the car
-     * @return The fuel efficiency category of the car ("Low", "Moderate", "High")
+     * Determines the fuel efficiency category based on the mileage of the car.
+     * @return "High" for mileage less than 100,000, "Moderate" for mileage less than 200,000, "Low" otherwise
      */
-    public String getFuelEfficiencyCategory(double mpg) {
-        if (mpg < 15) {
-            return "Low";
-        } else if (mpg < 25) {
+    public String getFuelEfficiencyCategory() {
+        if (mileage < 100000) {
+            return "High";
+        } else if (mileage < 200000) {
             return "Moderate";
         } else {
-            return "High";
+            return "Low";
         }
     }
 
     /**
-     * Calculates the total cost of ownership (TCO) of a car over a specified number of years.
-     * @param initialPrice The initial price of the car
-     * @param annualMaintenanceCost The annual maintenance cost of the car
-     * @param years The number of years to calculate TCO for
-     * @return The total cost of ownership over the specified number of years
+     * Calculates the total cost of ownership for the car.
+     * @param purchasePrice The purchase price of the car
+     * @param repairCost The total repair cost of the car
+     * @param fuelCost The total fuel cost of the car
+     * @return The total cost of ownership
      */
-    public double calculateTotalCostOfOwnership(double initialPrice, double annualMaintenanceCost, int years) {
-        return initialPrice + (annualMaintenanceCost * years);
+    public double calculateTotalCostOfOwnership(double purchasePrice, double repairCost, double fuelCost) {
+        return purchasePrice + repairCost + fuelCost;
     }
 
     /**
-     * Checks if a car's model year falls within a specified range.
-     * @param modelYear The model year of the car
-     * @param minYear The minimum allowable model year
-     * @param maxYear The maximum allowable model year
+     * Checks if the model year of the car is within a specified range.
+     * @param currentYear The current year
+     * @param minYear The minimum allowable year
+     * @param maxYear The maximum allowable year
      * @return True if the model year is within the specified range, false otherwise
      */
-    public boolean isModelYearInRange(int modelYear, int minYear, int maxYear) {
-        return modelYear >= minYear && modelYear <= maxYear;
+    public boolean isModelYearInRange(int currentYear, int minYear, int maxYear) {
+        return currentYear >= minYear && currentYear <= maxYear;
     }
 
     /**
-     * Determines the type of transmission of a car based on its description.
-     * @param description The description of the car's transmission
-     * @return The type of transmission ("Automatic", "Manual", "Semi-Automatic")
+     * Determines if the car has automatic transmission.
+     * @return True if the car has automatic transmission, false otherwise
      */
-    public String determineTransmissionType(String description) {
-        if (description.contains("automatic")) {
-            return "Automatic";
-        } else if (description.contains("manual")) {
-            return "Manual";
-        } else {
-            return "Semi-Automatic";
-        }
+    public boolean hasAutomaticTransmission() {
+        return transmissionType.equals("Automatic");
     }
 }
