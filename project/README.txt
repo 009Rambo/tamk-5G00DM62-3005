@@ -6,28 +6,28 @@ DESCRIPTION
     The JUnit framework requires external JAR-libraries, which
     can be downloaded from:
 
-	curl -o junit-4.13.2.jar https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+    curl -o junit-4.13.2.jar https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
     curl -o hamcrest-core-1.3.jar https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
     curl -o takari-cpsuite-1.2.7.jar https://repo1.maven.org/maven2/io/takari/junit/takari-cpsuite/1.2.7/takari-cpsuite-1.2.7.jar
 
 
 
-    The application consists of the following classes:
+  ##  The application consists of the following classes:
 
 	Main.java
 	Class1.java
 	Class2.java
-    Class3.java
-    Class4.java
-    Class5.java
+        Class3.java
+        Class4.java
+        Class5.java
 
     The unit tests include files:
 
 	Class1Test.java
 	Class2Test.java
-    Class3Test.java
-    Class4Test.java
-    Class5Test.java
+        Class3Test.java
+   	Class4Test.java
+        Class5Test.java
 
     The Suite includes:
 
