@@ -20,6 +20,11 @@ DESCRIPTION
         Class3.java
         Class4.java
         Class5.java
+	Class6.java
+	Class7.java
+	Class8.java
+	Class9.java
+	Class10.java
 
     The unit tests include files:
 
@@ -28,6 +33,11 @@ DESCRIPTION
         Class3Test.java
    	Class4Test.java
         Class5Test.java
+	Class6Test.java
+	Class7Test.java
+	Class8Test.java
+	Class9Test.java
+	Class10Test.java
 
     The Suite includes:
 
