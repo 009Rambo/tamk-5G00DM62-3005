@@ -16,7 +16,7 @@ public class Main {
             System.out.println("Subtraction: " + class1.subtract(5, 3)); // Expected output: 2
             System.out.println("Multiplication: " + class1.multiply(2, 3)); // Expected output: 6
             System.out.println("Division: " + class1.divide(10, 2)); // Expected output: 5
-            System.out.println("Is Even: " + class1.isEven(6)); // Expected output: true
+            System.out.println("Is Perfect Square: " + class1.isPerfectSquare(4)); // Expected output: true
         } catch (Exception e) {
             System.err.println("An error occurred while testing Class1: " + e.getMessage());
         }
