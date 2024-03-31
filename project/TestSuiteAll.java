@@ -9,6 +9,7 @@ import org.junit.runners.Suite.SuiteClasses;
     Class2Test.class,
     Class3Test.class,
     Class4Test.class,
+    Class5Test.class,
     // Add other test classes here
 })
 public class TestSuiteAll {

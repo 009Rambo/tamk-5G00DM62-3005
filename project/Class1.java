@@ -10,7 +10,7 @@ public class Class1 {
         // Add your code here to execute when running Class1
         System.out.println("Hello from Class1!");
     }
-    
+
     /**
      * Method to add two integers.
      * @param a First integer
@@ -56,11 +56,17 @@ public class Class1 {
     }
 
     /**
-     * Method to check if an integer is even.
-     * @param num Integer to check
-     * @return True if the integer is even, false otherwise
-     */
-    public boolean isEven(int num) {
-        return num % 2 == 0;
+    * Method to check if an integer is a perfect square.
+    * @param num Integer to check
+    * @return True if the integer is a perfect square, false otherwise
+    */
+    public boolean isPerfectSquare(int num) {
+    if (num < 0) {
+        return false; // Negative numbers are not perfect squares
     }
+    int sqrt = (int) Math.sqrt(num);
+    return sqrt * sqrt == num;
+    }
+
+
 }

@@ -1,4 +1,3 @@
-
 import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -13,18 +12,21 @@ public class Class1Test {
     public void testAdd() {
         assertEquals(5, class1.add(2, 3));
         assertEquals(-1, class1.add(2, -3));
+        assertEquals(10, class1.add(7, 3));
     }
 
     @Test
     public void testSubtract() {
         assertEquals(1, class1.subtract(4, 3));
         assertEquals(5, class1.subtract(2, -3));
+        assertEquals(-2, class1.subtract(1, 3));
     }
 
     @Test
     public void testMultiply() {
         assertEquals(15, class1.multiply(3, 5));
         assertEquals(-6, class1.multiply(2, -3));
+        assertEquals(0, class1.multiply(0, 5));
     }
 
     @Test
@@ -40,8 +42,10 @@ public class Class1Test {
     }
 
     @Test
-    public void testIsEven() {
-        assertTrue(class1.isEven(2));
-        assertFalse(class1.isEven(3));
+    public void testIsPerfectSquare() {
+    assertTrue(class1.isPerfectSquare(4));
+    assertFalse(class1.isPerfectSquare(5));
+    assertTrue(class1.isPerfectSquare(0));
     }
+
 }
