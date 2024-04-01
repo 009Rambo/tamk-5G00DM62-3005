@@ -5,9 +5,6 @@ import java.util.Arrays;
  * Represents Class3 with various methods.
  */
 public class Class3 {
-     public static void main(String[] args) {
-        System.out.println(" Hello from Class3 ! ");
-    }
     /**
      * Calculates the factorial of a non-negative integer.
      * @param n Non-negative integer

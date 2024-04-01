@@ -5,9 +5,6 @@ import java.util.Arrays;
  * Represents Class2 with various methods.
  */
 public class Class2 {
-     public static void main(String[] args) {
-        System.out.println(" Hello from Class2 ! ");
-    }
     /**
      * Calculates the area of a circle given its radius.
      * @param radius Radius of the circle

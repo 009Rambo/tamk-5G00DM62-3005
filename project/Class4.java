@@ -4,9 +4,6 @@ import java.util.Arrays;
  * Represents Class4 with various methods.
  */
 public class Class4 {
-     public static void main(String[] args) {
-        System.out.println(" Hello from Class4 ! ");
-    }
     /**
      * Calculates the square of a number.
      * @param num The number to square

@@ -6,10 +6,6 @@
 
 public class Class1 {
 
-     public static void main(String[] args) {
-        // Add your code here to execute when running Class1
-        System.out.println("Hello from Class1!");
-    }
 
     /**
      * Method to add two integers.
