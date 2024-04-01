@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 javac -cp "." Main.java
 
