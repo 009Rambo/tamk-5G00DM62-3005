@@ -104,3 +104,158 @@ Depreciation rate: 0.40950999999999993
 Is luxury car: true
 Recommended oil type: 5W-30
 
+-----------------------------------------------------------------------------------------------------
+After Makefile run
+-----------------------------------------------------------------------------------------------------
+
+ make run
+./run.sh
+Testing Class1:
+Addition: 5
+Subtraction: 2
+Multiplication: 6
+Division: 5
+Is Perfect Square: true
+
+Testing Class2:
+Circle Area: 50.26548245743669
+Triangle Area: 6.0
+Sorted Array: [1, 2, 3, 4, 5]
+Is Prime: true
+Reversed String: dlrow olleh
+
+Testing Class3:
+Factorial of 5: 120
+Is 'radar' a palindrome: true
+Merged Array: [1, 2, 3, 4, 5, 6]
+Max in Array: 9
+Min in Array: 1
+
+Testing Class4:
+Square of 5: 25
+Is 5 odd: true
+Concatenation: HelloWorld
+Reversed Array: [5, 4, 3, 2, 1]
+Sum of array: 15
+
+Testing Class5:
+Is empty: true
+String length: 5
+To uppercase: HELLO
+Is even: true
+Addition: 5
+
+Testing Class6:
+Is Adult: true
+Oldest person: Charlie
+Average height: 5.766666666666667
+Sum of numbers: 15
+Is palindrome: true
+
+Testing Class7:
+Is positive: true
+Factorial: 120
+Is leap year: true
+Is null or empty: true
+Count vowels: 2
+
+Testing Class8:
+Is mileage acceptable: true
+Fuel efficiency category: High
+Total cost of ownership: 32000.0
+Is model year in range: true
+Has automatic transmission: true
+
+Testing Class9:
+Is email valid: true
+Generated random password: nYDJkIH8
+Factorial: 120
+Masked phone number: ******7890
+Formatted SSN: ***-**-6789
+
+Testing Class10:
+Is valid car year: true
+Determine car type: Gasoline
+Depreciation rate: 0.40950999999999993
+Is luxury car: true
+Recommended oil type: 5W-30
+./run-test.sh
+# Running tests: Class1Test
+JUnit version 4.13.2
+.....
+Time: 0.034
+
+OK (5 tests)
+
+# Running tests: Class2Test
+JUnit version 4.13.2
+.....
+Time: 0.071
+
+OK (5 tests)
+
+# Running tests: Class3Test
+JUnit version 4.13.2
+.....
+Time: 0.078
+
+OK (5 tests)
+
+# Running tests: Class4Test
+JUnit version 4.13.2
+.....
+Time: 0.089
+
+OK (5 tests)
+
+# Running tests: Class5Test
+JUnit version 4.13.2
+.....
+Time: 0.031
+
+OK (5 tests)
+
+# Running tests: Class6Test
+JUnit version 4.13.2
+.....
+Time: 0.064
+
+OK (5 tests)
+
+# Running tests: Class7Test
+JUnit version 4.13.2
+.....
+Time: 0.064
+
+OK (5 tests)
+
+# Running tests: Class8Test
+JUnit version 4.13.2
+.....
+Time: 0.033
+
+OK (5 tests)
+
+# Running tests: Class9Test
+JUnit version 4.13.2
+.....
+Time: 0.08
+
+OK (5 tests)
+
+# Running tests: Class10Test
+JUnit version 4.13.2
+.....
+Time: 0.074
+
+OK (5 tests)
+
+./run-suite.sh
+JUnit version 4.13.2
+..................................................
+Time: 0.118
+
+OK (50 tests)
+
+
+
