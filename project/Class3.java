@@ -9,8 +9,12 @@ public class Class3 {
      * Calculates the factorial of a non-negative integer.
      * @param n Non-negative integer
      * @return Factorial of the integer
+     * @throws IllegalArgumentException if n is negative
      */
     public int factorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Input must be non-negative");
+        }
         if (n == 0) {
             return 1;
         }

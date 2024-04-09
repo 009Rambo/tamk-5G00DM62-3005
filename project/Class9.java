@@ -33,13 +33,32 @@ class Class9 {
      * @param n The number for which factorial is to be calculated
      * @return The factorial of the given number
      */
-    public int calculateFactorial(int n) {
+   /* public int calculateFactorial(int n) {
         int factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
         }
         return factorial;
+    }*/
+
+    /**
+ * Calculates the factorial of a given number.
+ * @param n The number for which factorial is to be calculated
+ * @return The factorial of the given number
+ * @throws IllegalArgumentException if the input is negative
+ */
+public int calculateFactorial(int n) {
+    if (n < 0) {
+        throw new IllegalArgumentException("Input must be non-negative");
     }
+
+    int factorial = 1;
+    for (int i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    return factorial;
+}
+
 
     /**
      * Masks a phone number for privacy.
