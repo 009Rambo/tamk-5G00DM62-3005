@@ -1,4 +1,4 @@
-DESCRIPTION
+## DESCRIPTION
 
     This is a demonstration of Java programming
     languagae a JUnit unit testing framework.
@@ -17,33 +17,33 @@ DESCRIPTION
 	Main.java
 	Class1.java
 	Class2.java
-    Class3.java
-    Class4.java
-    Class5.java
+   	Class3.java
+    	Class4.java
+    	Class5.java
 	Class6.java
 	Class7.java
 	Class8.java
 	Class9.java
 	Class10.java
 
-    The unit tests include files:
+   ## The unit tests include files:
 
 	Class1Test.java
 	Class2Test.java
-    Class3Test.java
+    	Class3Test.java
    	Class4Test.java
-    Class5Test.java
+    	Class5Test.java
 	Class6Test.java
 	Class7Test.java
 	Class8Test.java
 	Class9Test.java
 	Class10Test.java
 
-    The Suite includes:
+    ## The Suite includes:
 
 	TestSuiteAll.java   // Will run all tests
 
-HOW TO COMPILE MANUALLY
+## HOW TO COMPILE MANUALLY
 
     There are shell script files that set the
     java compiler options for libraries:
@@ -58,7 +58,7 @@ HOW TO COMPILE MANUALLY
 	./run-test.sh	    // Run test classes
 	./run-suite.sh	    // Run Suite class
 
-HOW TO USE MAKEFILE
+## HOW TO USE MAKEFILE
 
     A Makefile in included. It has the
     following targets:
